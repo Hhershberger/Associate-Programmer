@@ -67455,6 +67455,10 @@ PrefabInstance:
       propertyPath: soundManager
       value: 
       objectReference: {fileID: 241494149}
+    - target: {fileID: 1641040697658525796, guid: e931804d05e6ee04080b042341db8d0e, type: 3}
+      propertyPath: playerStats.health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1641040697658525797, guid: e931804d05e6ee04080b042341db8d0e, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
