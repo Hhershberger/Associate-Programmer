@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [System.Serializable]
     public struct Stats
     {
+        [Tooltip("The current player's health")]
+        public float health;
 
         [Tooltip("How fast the player runs.")]
         public float speed;
@@ -105,6 +107,12 @@ public class PlayerMovement : MonoBehaviour
         playerStats.canJump = false;
         soundManager.PlayJumpSound();
         rb.AddForce(Vector3.up * playerStats.jumpForce);
+    }
+
+    public void ChangeHealth(float amount){
+        playerStats.health += amount;
+        print($"Player's health: {playerStats.health}");
+
     }
 
 }
